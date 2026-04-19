@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Kanban ADS - Gabriel</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="app-shell">
+        <header>
+            <h1>Quadro Kanban</h1>
+            <button id="btn-criar">+ Novo Post-it</button>
+        </header>
+
+        <div class="board">
+            <div class="column">
+                <h2>Para Fazer</h2>
+                <div class="column-content" id="todo-column"></div>
+            </div>
+            <div class="column">
+                <h2>Em Progresso</h2>
+                <div class="column-content" id="doing-column"></div>
+            </div>
+            <div class="column">
+                <h2>Concluído</h2>
+                <div class="column-content" id="done-column"></div>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
